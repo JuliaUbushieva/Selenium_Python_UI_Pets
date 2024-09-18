@@ -3,7 +3,7 @@ from pages.profile_page import ProfilePage
 import time
 
 
-@pytest.mark.xfail
+# @pytest.mark.xfail
 def test_delete_pet(browser, login):
     link = 'http://34.141.58.52:8080/#/profile'
     page = ProfilePage(browser, link)
