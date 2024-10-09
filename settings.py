@@ -7,4 +7,3 @@ NEW_PET_AGE = '1'
 EDIT_NAME = 'Kura'
 EDIT_AGE = '4'
 NEW_PET_PICTURE = 'C:/Users/julia/PycharmProjects/Selenium_UI_Pet/angry_chihuahua.png'
- 

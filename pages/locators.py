@@ -17,6 +17,7 @@ class LoginPageLocators:
     LOGIN_EMAIL = (By.ID, "login")
     LOGIN_PASS = (By.CSS_SELECTOR, "#password > input")
     LOGIN_BTN = (By.CLASS_NAME, "p-button-label")
+    PROFILE = (By.XPATH, '//*[@id="app"]/header/div')
 
 
 class NewPetPageLocators:

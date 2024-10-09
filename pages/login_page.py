@@ -14,3 +14,7 @@ class LoginPage(BasePage):
 
     def go_to_button(self):
         self.browser.find_element(*LoginPageLocators.LOGIN_BTN).submit()
+
+    def find_profile(self):
+        profile = self.browser.find_element(*LoginPageLocators.PROFILE)
+        return profile
