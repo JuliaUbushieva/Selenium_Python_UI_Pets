@@ -1,5 +1,5 @@
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait as wait
+from selenium.webdriver.support.ui import WebDriverWait as Wait
 
 
 class BasePage:
@@ -12,4 +12,4 @@ class BasePage:
         self.browser.get(self.url)
 
     def element_is_visible(self, locator, timeout=10):
-        return wait(self.browser, timeout).until(EC.visibility_of_element_located(locator))
+        return Wait(self.browser, timeout).until(EC.visibility_of_element_located(locator))
