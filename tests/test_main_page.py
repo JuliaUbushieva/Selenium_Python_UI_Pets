@@ -18,9 +18,7 @@ def test_go_to_filter_by_type(browser):
     link = 'http://34.141.58.52:8080/#/'
     page = MainPage(browser, link)
     page.open()
-    time.sleep(3)
     page.go_to_filter_by_type()
-    time.sleep(3)
     browser.save_screenshot('filter_by_type.png')
 
 
@@ -30,7 +28,6 @@ def test_go_to_filter_by_name(browser):
     page = MainPage(browser, link)
     page.open()
     page.go_to_filter_by_name()
-    time.sleep(5)
     browser.save_screenshot('filter_by_name.png')
 
 
@@ -44,7 +41,6 @@ def test_thumbs_up(browser, login):
     page = MainPage(browser, link)
     page.open()
     page.thumbs_up()
-    time.sleep(3)
     browser.save_screenshot('thumbs_up.png')
 
 

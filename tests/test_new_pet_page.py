@@ -22,7 +22,6 @@ def test_create_new_pet(browser, login):
     page.go_to_submit()
     page.go_to_add_picture()
     page.go_to_submit_add_picture()
-    time.sleep(5)
     browser.save_screenshot('new_pet.png')
 
 
@@ -42,5 +41,4 @@ def test_cancel_new_pet(browser, login):
     page.go_to_gender()
     page.go_to_male()
     page.go_to_cancel()
-    time.sleep(5)
     browser.save_screenshot('new_pet_cancel.png')

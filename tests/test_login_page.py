@@ -1,4 +1,3 @@
-import time
 from pages.login_page import LoginPage
 import allure
 from allure_commons.types import AttachmentType
@@ -13,9 +12,7 @@ def test_go_to_login(browser):
     page.open()
     page.go_to_login()
     page.go_to_password()
-    time.sleep(3)
     page.go_to_button()
-    time.sleep(3)
     with allure.step('Save screenshot'):
         allure.attach(browser.get_screenshot_as_png(), name='result8', attachment_type=AttachmentType.PNG)
     browser.save_screenshot('test_login_page.png')
